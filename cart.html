@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Cart - Walldecorator</title>  
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!-- Media queries -->
+	<meta name="viewport" content="width=750, user-scalable=yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!-- FAVICON -->
+	<link href="favicon.ico" rel="shortcut icon">
+
+	<!-- CSS LINKS -->
+	<!-- Main style -->
+	<link href="css/main.css" rel="stylesheet" media="screen">
+	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" media="screen, projection"><![endif]-->
+</head>
+<body>
+<!-- wrapper -->
+<div class="wrapper">
+	<!-- header -->
+	<header class="header" role="banner">
+		<div class="header-top">
+			<div class="container">
+				<a class="logo" href="#">
+					
+				</a>
+				<div class="header-cart">
+					<div class="text"><span>(812) 358-12-22</span><span>оплата и доставка</span></div>
+					<a href="#" class="basket-link"></a>
+					<a href="#">КОРЗИНА 3 товара</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="mobile-nav-open">
+					<div class="menu-text">
+						МЕНЮ
+					</div>
+					<div class="menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<nav class="navigation" role="navigation">
+					<ul class="navigation-list">
+						<li><a href="#">о нас</a></li>
+						<li><a href="#">комнаты</a></li>
+						<li><a href="#">рамы</a></li>
+						<li><a href="#">идеи подарков</a></li>
+						<li><a href="#">дизайнерам</a></li>
+						<li><span>акции</span></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+	
+	<!-- content -->
+	<div class="content cart-page" role="main">
+		<div class="container">
+			<div class="block-title">
+				<div class="block-title-inner">
+					<h1>корзина</h1>
+				</div>
+			</div>
+			<form action="#">
+				<fieldset class="cart-fieldset">
+					<table class="cart-table def-table">
+						<thead>
+							<tr>
+								<th class="col-product">Товар</th>
+								<th class="col-price">Цена</th>
+								<th class="col-count" colspan="2">Количество</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="col-product">
+									<h3>КОМПОЗИЦИЯ №1.08.1.3<br /> 
+									(печать ваших фотографий)</h3>
+									<a href="#"><img src="pic/cart/img-01.jpg" alt="image" /></a>
+									<div class="uploads"><a href="#">посмотреть загруженные фотографии</a></div>
+								</td>
+								<td class="col-price">
+									<span class="price"><span class="price-value">8 499</span><span class="ruble">q</span></span>
+								</td>
+								<td class="col-count">
+									<span class="counter">
+										<span class="counter-minus">-</span>
+										<span class="counter-value">1</span>
+										<span class="counter-plus">+</span>
+									</span>
+								</td>
+								<td class="col-actions">
+									<a href="#" class="delete-row">удалить</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-product">
+									<h3>ФОТОРАМКА №0.12.03</h3>
+									<a href="#"><img src="pic/cart/img-02.jpg" alt="image" /></a>
+									<div class="uploads"><a href="#">посмотреть загруженные фотографии</a></div>
+								</td>
+								<td class="col-price">
+									<span class="price"><span class="price-value">1 599</span><span class="ruble">q</span></span>
+								</td>
+								<td class="col-count">
+									<span class="counter">
+										<span class="counter-minus">-</span>
+										<span class="counter-value">1</span>
+										<span class="counter-plus">+</span>
+									</span>
+								</td>
+								<td class="col-actions">
+									<a href="#" class="delete-row">удалить</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="col-product">
+									<h3>КОМПОЗИЦИЯ №1.02.5.9<br />
+									(Тема “Папоротники”)</h3>
+									<a href="#"><img src="pic/cart/img-03.jpg" alt="image" /></a>
+								</td>
+								<td class="col-price">
+									<span class="price"><span class="price-value">6 499</span><span class="ruble">q</span></span>
+								</td>
+								<td class="col-count">
+									<span class="counter">
+										<span class="counter-minus">-</span>
+										<span class="counter-value">1</span>
+										<span class="counter-plus">+</span>
+									</span>
+								</td>
+								<td class="col-actions">
+									<a href="#" class="delete-row">удалить</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</fieldset>
+				<fieldset class="delivery-fieldset">
+					<h3>Информация о доставке</h3>
+					<div class="form-info">Доставка осуществляется курьерской службой до указанного адреса.<br />
+					Срок выполнения заказа 3 дня + время на доставку</div>
+					<div class="form-line-columns">
+						<div class="column-50">
+							<div class="form-line">
+								<div class="wrap-label">
+									<label for="cart_form_country">страна<span class="required">*</span></label>
+								</div>
+								<input type="text" name="cart_form_country" id="cart_form_country" value="Россия" />
+							</div>
+							<div class="form-line">
+								<div class="wrap-label">
+									<label for="cart_form_address">адрес<span class="required">*</span></label>
+								</div>
+								<input type="text" name="cart_form_address" id="cart_form_address" value="ул. Садовая, д 43 , кв 15" />
+							</div>
+							<div class="form-line">
+								<div class="wrap-label">
+									<label for="cart_form_email">e-mail<span class="required">*</span></label>
+								</div>
+								<input type="email" name="cart_form_email" id="cart_form_email" />
+							</div>
+						</div>
+						<div class="column-50">
+							<div class="form-line">
+								<div class="wrap-label">
+									<label for="cart_form_country">город<span class="required">*</span></label>
+								</div>
+								<div class="wrap-select-large">
+									<select class="select-town">
+										<option></option>
+										<option value="1" selected>Санкт-Петербург</option>
+										<option value="2">Лен.</option>
+										<option value="3">Москва</option>
+										<option value="4">Моск. обл.</option>
+										<option value="5">Екатеринбург</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-line">
+								<div class="wrap-label">
+									<label for="cart_form_firstname">имя<span class="required">*</span></label>
+								</div>
+								<input type="text" name="cart_form_firstname" id="cart_form_firstname" />
+							</div>
+							<div class="form-line">
+								<div class="wrap-label">
+									<label for="cart_form_phone">телефон<span class="required">*</span></label>
+								</div>
+								<input type="tel" name="cart_form_phone" id="cart_form_phone" />
+							</div>
+						</div>
+					</div>
+					<div class="form-line">
+						<div class="wrap-label">
+							<label for="cart_form_comment">комментарий</label>
+						</div>
+						<textarea name="cart_form_comment" id="cart_form_comment"></textarea>
+					</div>
+					<div class="form-line">
+						<div class="coupon">
+							<div class="wrap-label">
+								<label for="cart_form_coupon">Я обладатель купона №</label>
+							</div>
+							<div class="coupon-field">
+								<input type="text" name="cart_form_coupon" id="cart_form_coupon" />
+							</div>
+							<a href="#" class="btn-gray">применить</a>
+						</div>
+					</div>
+					<div class="cart-total">
+						<ul class="cart-total-list">
+							<li>
+								<div class="title">товаров на сумму</div>
+								<div class="value"><span class="cart-pretotal-value">0</span><span class="ruble">q</span></div>
+							</li>
+							<li>
+								<div class="title">доставка</div>
+								<div class="value"><span class="cart-delivery-value">300</span><span class="ruble">q</span></div>
+							</li>
+							<li class="total">
+								<div class="title">итого</div>
+								<div class="value"><span class="cart-total-value">0</span><span class="ruble">c</span></div>
+							</li>
+						</ul>
+					</div>
+				</fieldset>
+				<fieldset class="payments-fieldset">
+					<h3>Способ оплаты</h3>
+					<ul class="radio-list">
+						<li class="payment-courier">
+							<div class="radio-holder">
+								<label>
+									<input type="radio" class="radio" name="cart_form_payments" checked />
+									<div class="text">Наличными курьеру<br /> (только для Санкт-Петербурга и Москвы)</div>
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="radio-holder">
+								<label>
+									<input type="radio" class="radio" name="cart_form_payments" />
+									<div class="text">Оплата банковской картой (<a href="#" title="Info">?</a>)</div>
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="radio-holder">
+								<label>
+									<input type="radio" class="radio" name="cart_form_payments" />
+									<div class="text">Оплата Яндекс-Деньгами<br /> (онлайн или через терминалы)</div>
+								</label>
+							</div>
+						</li>
+					</ul>
+					<div class="btn-red">
+						<span>купить</span>
+						<input type="submit" value="" />
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<div class="footer-spacer"></div>
+	</div>
+	<!-- content end -->
+</div>
+<!-- wrapper end -->
+
+<!-- footer -->
+<footer class="footer" role="contentinfo">
+	<div class="container">
+		<div class="social">
+			<ul class="social-list">
+				<li><a href="#" class="icon-twitter"></a></li>
+				<li><a href="#" class="icon-fb"></a></li>
+				<li><a href="#" class="icon-pin"></a></li>
+				<li><a href="#" class="icon-tw"></a></li>
+				<li><a href="#" class="icon-inst"></a></li>
+				<li><a href="#" class="icon-mail"></a></li>
+			</ul>
+		</div>
+		<div class="footer-menu-columns">
+			<div class="column-50">
+				<ul class="footer-menu-list">
+					<li><a href="#">БЛОГ</a></li>
+					<li><a href="#">Часто задаваемые вопросы</a></li>
+					<li><a href="#">Магазинам</a></li>
+				</ul>	
+			</div>
+			<div class="column-50">
+				<ul class="footer-menu-list">
+					<li><a href="#">Реквизиты</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>	
+			</div>
+		</div>
+		<div class="copyright">2015 | hello@deco.ru | +7 (812) 358-12-22</div>
+	</div>
+</footer>
+<!-- footer end -->
+
+<!-- SCRIPT LINKS -->
+<!-- Jquery library -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- UI -->
+<script src="js/jquery-ui.min.js"></script>	
+<!-- Widgets -->
+<script src="js/widgets.js"></script>
+<!-- Main functions -->
+<script src="js/functions.js"></script>
+</body>
+</html>

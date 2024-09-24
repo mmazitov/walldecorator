@@ -1,0 +1,36 @@
+//----------------------------------------------------//
+// Mixins & Includes                                  //
+//----------------------------------------------------//
+
+// PLACEHOLDER MIXIN
+@mixin placeholderColor($input-text-color) {
+	&::-webkit-input-placeholder {color: $input-text-color; opacity: 1;}
+	&:-moz-placeholder {color: $input-text-color; opacity: 1;}
+	&::-moz-placeholder {color: $input-text-color; opacity: 1;}
+	&:-ms-input-placeholder {color: $input-text-color;}
+	&:focus:-moz-placeholder {color:transparent; opacity: 1;}
+	&:focus::-moz-placeholder {color:transparent; opacity: 1;}
+	&:focus::-webkit-input-placeholder {color:transparent; opacity: 1;}
+	&:focus:-ms-input-placeholder {color:transparent; opacity: 1;}
+	&:focus::placeholder {color:transparent; opacity: 1;}
+}
+
+// TRANSITION MIXIN
+// @include transition (opacity .2s ease 0s);
+@mixin transition($args...) {
+	-webkit-transition: $args;
+   -moz-transition: $args;
+   -ms-transition: $args;
+   -o-transition: $args;
+   transition: $args;
+}
+
+// TRANSFORM MIXIN
+// @include transform (rotate(-5deg));
+@mixin transform($args...) {
+	-webkit-transform: $args;
+   -moz-transform: $args;
+   -ms-transform: $args;
+   -o-transform: $args;
+   transform: $args;
+}
